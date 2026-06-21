@@ -75,6 +75,8 @@
   "totalAmount": 25.98,
   "deliveryAddress": "456 Elm Street, Dhaka"
 }
+
+
 Restaurant Service (/api/restaurants)
 Method	Endpoint	Description
 POST	/	Create restaurant
@@ -270,12 +272,16 @@ curl -X POST http://localhost:8082/api/menu-items \
 curl -X POST http://localhost:8081/api/orders \
   -H "Content-Type: application/json" \
   -d '{"userId":"user123","restaurantId":"YOUR_RESTAURANT_ID","items":"[{\"name\":\"Margherita Pizza\",\"quantity\":2,\"price\":12.99}]","totalAmount":25.98,"deliveryAddress":"456 Elm Street, Dhaka"}'
-📚 API Documentation
+
+
+### 📚 API Documentation
 Service	Swagger UI URL
 Order Service	http://localhost:8081/swagger-ui.html
 Restaurant Service	http://localhost:8082/swagger-ui.html
 Notification Service	http://localhost:8083/swagger-ui.html
-🧪 Testing
+
+
+### 🧪 Testing
 Unit Tests
 bash
 # All Tests
@@ -294,14 +300,18 @@ text
 ✅ Total Tests: 26
 ✅ Passed: 26
 ✅ Failed: 0
-🐳 Docker Commands
+
+
+### 🐳 Docker Commands
 Command	Description
 docker compose up -d	Start all services
 docker compose ps	Check container status
 docker compose logs	View all logs
 docker compose logs [service]	View specific service logs
 docker compose down	Stop all services
-⭐ Features
+
+
+### ⭐ Features
 Feature	Status
 ✅ Microservices Architecture (3 services)	✅
 ✅ Reactive Programming (WebFlux)	✅
@@ -320,7 +330,10 @@ Feature	Status
 ✅ Resilience4j (Bonus)	✅
 ✅ Zipkin Tracing (Bonus)	✅
 ✅ Centralized Configuration (Bonus)	✅
-📊 Development Progress
+
+
+
+### 📊 Development Progress
 Step	Description	Status
 1	Project Structure + Docker Setup	✅
 2	Order Service (Spring WebFlux + PostgreSQL + Kafka)	✅
@@ -336,7 +349,9 @@ Step	Description	Status
 12	Zipkin Tracing (Bonus)	✅
 13	Docker Compose	✅
 14	Demo Ready	✅
-🔗 Important URLs
+
+
+### 🔗 Important URLs
 Service	URL
 Eureka Dashboard	http://localhost:8761
 API Gateway	http://localhost:8080
@@ -345,10 +360,12 @@ Restaurant Service Swagger	http://localhost:8082/swagger-ui.html
 Notification Service Swagger	http://localhost:8083/swagger-ui.html
 RabbitMQ Dashboard	http://localhost:15672 (admin/admin123)
 Zipkin Dashboard	http://localhost:9411
-📝 License
+
+
+### 📝 License
 This project is submitted as a final assignment for Software Service Engineering (YN3012180059) at Yunnan University, School of Software and AI.
 
-👨‍💻 Author
+### 👨‍💻 Author
 Name: Tuhin Md Abu Hamza
 
 Student ID: 20233120013
