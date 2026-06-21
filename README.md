@@ -67,7 +67,6 @@
 | GET | `/count/{status}` | Get order count by status |
 
 **Request Body (POST):**
-```json
 {
   "userId": "user123",
   "restaurantId": "f681ba2d-3cb4-455b-a3ca-8675cb8347d2",
