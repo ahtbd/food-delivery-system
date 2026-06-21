@@ -89,7 +89,6 @@ DELETE	/{id}	Delete restaurant (soft delete)
 PUT	/{id}/rating?rating=4.5	Update restaurant rating
 Request Body (POST):
 
-json
 {
   "name": "Pizza Palace",
   "description": "Best Italian Pizza",
@@ -103,6 +102,8 @@ json
   "isActive": true,
   "isAcceptingOrders": true
 }
+
+
 Menu Item Service (/api/menu-items)
 Method	Endpoint	Description
 POST	/	Add menu item
@@ -116,7 +117,6 @@ DELETE	/{id}	Delete menu item
 PATCH	/{id}/toggle-availability	Toggle availability
 Request Body (POST):
 
-json
 {
   "restaurantId": "f681ba2d-3cb4-455b-a3ca-8675cb8347d2",
   "name": "Margherita Pizza",
@@ -129,6 +129,8 @@ json
   "isGlutenFree": false,
   "preparationTime": 15
 }
+
+
 Notification Service (/api/notifications)
 Method	Endpoint	Description
 POST	/	Create notification
@@ -139,7 +141,7 @@ GET	/pending	Get pending notifications
 PUT	/{id}/status	Update notification status
 Request Body (POST):
 
-json
+
 {
   "userId": "user123",
   "orderId": "c50bd6e8-ff03-48f0-98c4-f0ded862acca",
@@ -149,6 +151,8 @@ json
   "recipient": "user@example.com",
   "priority": "HIGH"
 }
+
+
 🚀 Quick Start
 Prerequisites
 Java 17 or 21
@@ -232,6 +236,8 @@ CREATE TABLE IF NOT EXISTS menu_items (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );"
+
+
 4. Start Services (5 Terminals)
 bash
 # Terminal 1: Service Discovery
