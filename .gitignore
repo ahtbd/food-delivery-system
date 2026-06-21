@@ -1,0 +1,114 @@
+# ============================
+# Gradle Build Files
+# ============================
+.gradle/
+build/
+*/build/
+*/out/
+gradle-app.setting
+gradle-wrapper.properties
+!gradle-wrapper.jar
+*.class
+*.jar
+*.war
+*.ear
+*.log
+
+# ============================
+# IDE Files
+# ============================
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.project
+.classpath
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ============================
+# VS Code
+# ============================
+.vscode/
+*.code-workspace
+
+# ============================
+# Application Properties (Sensitive)
+# ============================
+application.properties
+application-dev.properties
+application-prod.yml
+**/src/main/resources/application-local.yml
+
+# ============================
+# Docker
+# ============================
+docker-compose.override.yml
+*.pid
+*.pid.lock
+
+# ============================
+# Logs
+# ============================
+logs/
+*.log
+*.log.gz
+
+# ============================
+# OS Generated Files
+# ============================
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*.swo
+
+# ============================
+# Test Reports
+# ============================
+*/build/reports/
+*/build/test-results/
+
+# ============================
+# Temporary Files
+# ============================
+*.tmp
+*.temp
+*.cache
+*.lock
+
+# ============================
+# Backup Files
+# ============================
+*.bak
+*.backup
+
+# ============================
+# Docker Volume Data
+# ============================
+data/
+postgres-data/
+mongodb-data/
+volumes/
+
+# ============================
+# Environment Variables
+# ============================
+.env
+.env.local
+.env.*.local
+
+# ============================
+# Gradle Wrapper (keep wrapper jar)
+# ============================
+!gradle/wrapper/gradle-wrapper.jar
+
+# ============================
+# Specific Application Files
+# ============================
+**/src/main/resources/application-*.yml
+!**/src/main/resources/application.yml

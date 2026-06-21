@@ -1,0 +1,8 @@
+rootProject.name = 'food-delivery-system'
+
+include 'service-discovery'
+include 'api-gateway'
+include 'config-server'
+include 'order-service'
+include 'restaurant-service'
+include 'notification-service'
